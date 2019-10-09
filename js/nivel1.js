@@ -239,14 +239,34 @@
 // Escribí código para que devuelva (return) la suma de numero1 y numero2
 // Ejecutá la función sumar y mostrá su resultado en la consola
 
+const sumar = (num1, num2) => {
+    return num1 + num2;
+}
+
+console.log(sumar(45, 23));
 
 // TAREA: Ahora creemos otra función llamada 'restar'
 //       Que acepte 2 números como parámetro y los reste, y que devuelva ese valor.
 // Ejecutá la función con los números 5 y 1 y mostralos con console.log
+ 
+const restar = (num1, num2) => {
+    return num1 - num2;
+}
+
+console.log(restar(45, 23))
 
 
 // Consejo: Sabías que en vez de pasar los números directamente a tu función podés crear variables con esos números
 // y pasarlos como parámetros? Probalo!
+
+let number1 = 45;
+let number2 = 23;
+
+const pruebaSuma = (number1, number2) => {
+    return number1 - number2;
+}
+
+console.log(pruebaSuma(number1, number2))
 
 // Consejo: Dejá las funciones como están, no las comentes, las vamos a usar de nuevo.
 
@@ -327,6 +347,18 @@
 // No se olviden de hacer un console.log para ver el resultado!
 //
 
+let operador = "*";
+let number3 = 12;
+let number4 = 8;
+
+if(operador === "+"){
+    console.log(sumar(number3, number4))
+}else{
+    console.log(restar(number3, number4))
+}
+
+operador === "+" ? console.log(sumar(number3, number4)) : console.log(restar(number3, number4));
+
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
 
 
@@ -360,7 +392,17 @@
 
 // TAREA: Creemos 2 funciones más: dividir y multiplicar.
 
+const dividir = (num3, num2) => {
+    return num3 / num2;
+}
 
+console.log(dividir(number3, number2))
+
+const multiplicar = (num1, num4) => {
+    return num1 * num4;
+}
+
+console.log(multiplicar(number1, number4))
 
 
 
@@ -370,8 +412,15 @@
 //       'else if' el 'operador' es igual a '*' - llamar a la función 'multiplicar'.
 //       else console.log - "Perdón, no conozco ese operador".
 
-
-
+if(operador === "-"){
+    console.log(restar(number3, number4))
+}else if (operador === "/"){
+    console.log(dividir(number3, number4))
+}else if (operador === "*"){
+    console.log(multiplicar(number1, number3))
+}else{
+    console.log("Perdón, no conozco ese operador")
+}
 
 
 /*
@@ -400,6 +449,10 @@
 
 // TAREA: usando el operador !, Intentá invertir una variable (de true a false, o de false a true) e imprimí el
 // resultado en la consola.
+
+let boolean = (20 < 25);
+console.log(boolean)
+console.log(!boolean);
 
 
 ////////////////////////////////////////////////////////////////////////////

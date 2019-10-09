@@ -44,7 +44,7 @@
 
 
 
-
+let comidasFavoritas = ["hamburguesas", "papas fritas", "pizza", "fideos con crema"];
 
 
 
@@ -65,7 +65,7 @@
 // imprimi utilizando console.log el resultado.
 
 
-
+console.log(comidasFavoritas.length)
 
 
 
@@ -90,7 +90,7 @@
 
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
 
-
+console.log(comidasFavoritas[3])
 
 
 
@@ -116,13 +116,12 @@
 // con cualquier otra cosa.
 
 
-
+comidasFavoritas[0] = "ravioles";
+console.log(comidasFavoritas)
 
 
 
 // TAREA: console.log todo el array para verificar.
-
-
 
 
 
@@ -147,13 +146,12 @@
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
 
 
-
+comidasFavoritas.push("hamburguesa")
+console.log(comidasFavoritas)
 
 
 
 // TAREA: console.log todo el array para verificar.
-
-
 
 
 
@@ -181,7 +179,10 @@
 
 // TAREA: Intenta crear un array como una constante y modifica los valores que contiene.
 
+const hijos = ["Luli", "Sicko"];
 
+hijos.push("Nala")
+console.log(hijos)
 
 
 
@@ -191,9 +192,9 @@
 //       con notación de corchetes (array[1]) y
 //       asigna un nuevo array completamente nuevo a la constante
 
+//hijos = ["Chichita", ["Miranda"]]
 
-
-
+//console.log(hijos) error
 
 
 /*
@@ -247,7 +248,12 @@
 //       diez a uno.
 
 
+let counter = 11;
 
+while (counter > 1) {
+    counter = counter - 1;
+    console.log(counter);
+}
 
 
 
@@ -268,8 +274,10 @@
 
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
 
-
-
+let i;
+for( i = 3; i <= 22; i = i + 3) {
+    console.log(i)
+}
 
 
 
@@ -296,8 +304,9 @@
 
 // TAREA: Probalo con tu comidasFavoritas array.
 
-
-
+for (i = 0; i < comidasFavoritas.length; i++) {
+    console.log(`Me gustan: ${comidasFavoritas[i]}`)
+}
 
 
 
@@ -323,6 +332,8 @@
     }
 */
 
+
+
 // TAREA: Ha llegado el momento de un ejercicio clásico: 'FizzBuzz'.
 
 // Cuenta del 1 al 50 e imprime los números:
@@ -339,7 +350,29 @@
 // 16% 4 = 0 - en 16 tenemos 4 * 4
 // 19% 4 = 3 - en 19 tenemos 4 * 4 + 3, etc.
 
+for(i = 1; i <=50; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+        console.log("FizzBuzz")
+    }else if(i % 5 === 0){
+        console.log("Buzz")
+    }else if(i % 3 === 0){
+        console.log("Fizz")
+    }else{
+        console.log(i)
+    }
+}
 
+//versión con dos if
+for(i = 1; i <= 50; i++){
+    let mostrar = "";
+    if(i % 3 === 0){
+        mostrar += "Fizz";
+    }
+     if(i % 5 === 0){
+        mostrar += "Buzz";
+    }
+    console.log(mostrar || i)
+}
 
 
 
