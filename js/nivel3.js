@@ -124,8 +124,8 @@
 //       variable llamada nuestroTitulo.
 //       Utilizá console.log para ver lo que obtuviste!
 
-
-
+const nuestroTitulo = document.querySelector('h1')
+console.log(nuestroTitulo)
 
 
 
@@ -147,14 +147,15 @@
 // TAREA: Obtené todos los elementos <li> de la página en una variable llamada mediaLinks.
 
 
-
+const mediaLinks = document.querySelectorAll("li");
+console.log(mediaLinks)
 
 
 
 // TAREA: Ahora utilizá console.log para ver la cantidad de 
 // elementos li que hay con mediaLinks.length
 
-
+console.log(mediaLinks.length)
 
 
 
@@ -163,7 +164,9 @@
 //      sobre cada item de mediaLinks y mostralos en pantalla con console.log
 
 
-
+for(let i = 0; i < mediaLinks.length; i++){
+    console.log(mediaLinks[i])
+}
 
 
 
@@ -206,10 +209,10 @@
 // TAREA: Hagamos un nuevo título! Cambiá el contenido de nuestro 'h1' y ponele lo que quieras.
 
 
+console.log(nuestroTitulo.textContent)
 
 
-
-/*
+/* 
     Editando atributos
     ==================
     
@@ -248,7 +251,8 @@
 
 // Tarea: Obtené cualquier elemento de la página y cambiale algunos estilos.
 
-
+const header = document.querySelector("header");
+header.style.backgroundColor = "pink";
 
 
 
