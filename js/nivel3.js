@@ -228,7 +228,8 @@ console.log(nuestroTitulo.textContent)
 
 
 
-
+const imagenPagina = document.querySelector("img");
+imagenPagina.src = "img/kittens.jpeg";
 
 
 /*
@@ -281,7 +282,6 @@ header.style.backgroundColor = "pink";
 //       en nuestra cabecera.
 //
 // P.S. También les podés dar estilos al nuevo nodo que creaste.
-
 
 
 

@@ -59,7 +59,7 @@ console.log('Tu salario diario es ' + calcularSalarioDiario(salarioAnual));
 // Y con let?
 // let mensaje = 'Hola, mundo';
 // console.log(mensaje); //error
-*/
+
 // function hoisting
 
 /*

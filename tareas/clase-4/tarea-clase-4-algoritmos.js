@@ -5,6 +5,143 @@ Estos desafíos de coding están enfocados para los principiantes, por lo tanto 
 usando  elementos de programación simples y clásicos.
 */
 
+//1
+for(let i=1; i<=10;i++){
+  console.log(i);
+}
+
+//2
+for(let i =1; i<=100; i+=2){
+  console.log(i);
+}
+
+//3
+let numeroTabla = 7;
+let i;
+const tablaDel7 = () => {
+  for(i = 0; i<=10; i++){
+    let resultado = i * numeroTabla;
+    console.log(`${numeroTabla} x ${i} = ${resultado}`)
+  }
+}
+
+tablaDel7()
+
+for(let x = 0; x<=10; x++){
+  let resultado = x * numeroTabla;
+  console.log(`${numeroTabla} x ${x} = ${resultado}`)
+}
+
+//4 FALTA
+
+//5
+let arrayDeNumeros = [1,2,3,4,5,6,7,8,9,10];
+
+let sumaArray = arrayDeNumeros.reduce((num, num2) => num + num2) 
+console.log(sumaArray) //esto funciona
+
+let counter = 0;
+function sumaArrays() {
+  for ( i = 0; i < arrayDeNumeros.length; i++) {
+    counter += arrayDeNumeros[i];
+  }
+  return counter;
+}
+
+console.log(sumaArrays()) //esto también funciona 
+
+//6
+let numberf = 1;
+
+for (let f = 1; f<=10; f++){
+  numberf *= f;
+}
+console.log(numberf) //esto funciona
+
+//7
+let newCounter = 0
+for(let i =11; i<30; i+=2){
+  newCounter += i;
+}
+console.log(newCounter)
+
+//8 funcionan
+
+const convertToFahrenheit = (numCelsius) => {
+  let fahrenheit = (numCelsius * 1.8) + 32
+  return fahrenheit;
+}
+
+console.log(convertToFahrenheit(60))
+
+const convertToCelsius = (numFah) => {
+  let celsius = (numFah -32) / 1.8;
+  return celsius;
+}
+
+console.log(convertToCelsius(89))
+
+//10
+
+let numberArray = [12, 4, 72, 8, 23, 9, 33, 61, 5, 22]
+
+const sumar = () => {
+  let sumaNumeros = numberArray.reduce((num1, num2) => num1 + num2)
+  return sumaNumeros
+}
+ 
+console.log(sumar())
+
+//11 OK
+
+const promedio = () => {
+  return sumar() / numberArray.length
+}
+
+console.log(promedio())
+
+//12 OK
+let mezclaNumeros = [1, 7, 4, -3, 10, 75, -5, 4, -1, 22, -8, -5, 16, 32]
+
+const soloPositivos = (num) => {
+  return let = onlyPositivos = num.filter(num => num >= 0)
+}
+
+console.log(soloPositivos(mezclaNumeros))
+
+//13 Find the maximum number in an array of numbers
+
+const maxNumber = () => {
+  return Math.max(...numberArray)
+}
+
+console.log(maxNumber())
+
+//14  Imprimir los primeros 10 dígitos de Fibonacci sin recursión
+
+//15 
+
+//16 Desafío de programación #16: Create una función que dado un número retorne un Boolean (true/false) dependiendo si es primo o no.
+
+//17 Calcular la suma de los dígitos positivos de un número entero positivo
+
+var number = 2978,
+    output = [],
+    sNumber = number.toString();
+
+for (var l = 0, len = sNumber.length; l < len; l += 1) {
+    output.push(+sNumber.charAt(l));
+}
+
+console.log(output);
+
+for (var m = 0, sum = 0; m < output.length; sum += output[m++]);
+console.log(sum);
+
+/*
+ * Outputs: 39
+ */
+
 /*
 Desafío de programación #1: Imprimí los números del 1 al 10
 
