@@ -1,0 +1,47 @@
+body{
+  background-color: #b2d8d8;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .wrapper{
+    width: 450px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #008080;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    input{
+      margin: 15px 0px;
+    }
+    .btnWrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .calcularBtn{
+        background-color: #004c4c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 15px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    
+  }
+}

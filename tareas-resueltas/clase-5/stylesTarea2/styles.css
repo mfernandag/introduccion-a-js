@@ -1,0 +1,71 @@
+body {
+  background-color: #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.formWrapper {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8b021d), to(#d6032d));
+  background-image: linear-gradient(#8b021d, #d6032d);
+  width: 350px;
+  height: 350px;
+  padding: 15px 30px;
+}
+
+.formWrapper form {
+  color: white;
+}
+
+.formWrapper form input {
+  margin: 10px 0px;
+}
+
+.formWrapper form .textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formWrapper form .submitWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formWrapper form .submitWrapper .btn {
+  width: 40%;
+  padding: 10px 0px;
+  background-color: black;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.formWrapper .saludo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */
