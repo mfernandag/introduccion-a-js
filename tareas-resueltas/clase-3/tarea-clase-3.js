@@ -6,7 +6,7 @@
 // Si el nombe del usuario es el mismo que el que nombre que eligieron
 // Imprimir "Hola " y el nombre, " te llamás igual que mi ..."
 // Si no, simplemente imprimir "Hola " + nombre!
-
+ 
 let userName = prompt("¿Cuál es tu nombre");
 if(userName == "Fernanda"){
     console.log(`Hola, Tocayo!, yo también me llamo Fernanda`)
