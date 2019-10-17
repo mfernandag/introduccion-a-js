@@ -133,14 +133,10 @@ for (var l = 0, len = sNumber.length; l < len; l += 1) {
     output.push(+sNumber.charAt(l));
 }
 
-console.log(output);
-
 for (var m = 0, sum = 0; m < output.length; sum += output[m++]);
 console.log(sum);
 
-/*
- * Outputs: 39
- */
+
 
 /*
 Desafío de programación #1: Imprimí los números del 1 al 10
