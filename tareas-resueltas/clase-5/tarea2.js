@@ -24,7 +24,7 @@ document.querySelector('#submitBtn').onclick = function (){
 ${apellido}
 ${edad} años`
   document.querySelector('#textarea').value = todo;
-  const saludoContainer = document.querySelector('#saludoContainer')
+  let saludoContainer = document.querySelector('#saludoContainer')
   let saludo = document.createElement('h1')
   saludo.textContent = `¡Bienvenidx, ${nombreCompleto}!`
   saludoContainer.appendChild(saludo)
